@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    command: sleep infinity
+    volumes:
+      - type: bind
+        source: ..
+        target: /workspaces/app
+        consistency: cached

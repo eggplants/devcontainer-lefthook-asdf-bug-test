@@ -1,0 +1,10 @@
+{
+  "name": "Lefthook Test",
+  "dockerComposeFile": "compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "postCreateCommand": "lefthook install",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/lefthook-asdf:1": {},
+  }
+}
